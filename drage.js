@@ -62,8 +62,8 @@ function attack(number) {
     HtmlElements[dragonTarget].querySelector(".HP").innerText = characterHP[dragonTarget] + "/100"
 
     //spiller er død ?
-    if(characterHP[number] <= 0){
-        HtmlElements[number].remove()
+    if(characterHP[dragonTarget] <= 0){
+        HtmlElements[dragonTarget].remove()
         numberOfplayers -= 1
 
         //alle spillere døde ?
